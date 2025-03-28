@@ -49,7 +49,7 @@ app.post("/api/distribute", async (req, res) => {
     }
 
 
-    const mint = new PublicKey("4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU")
+    const mint = new PublicKey("61Qp7Rwu9JmSjrcRBxN8iZo5osKeX1e4iWGDy9PWqHYE")
     const contributor = new PublicKey(contributorKey)
     const contributorAta = await getTokenAccount(contributorKey, mint.toBase58())
     const detaWallet = await getTokenAccount(wallet.publicKey.toBase58(), mint.toBase58())
